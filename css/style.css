@@ -45,8 +45,8 @@ list-style: none;
         text-decoration: none;
 
 }
-.header-item :hover,
-.header-item :focus
+.header-link :hover,
+.header-link :focus
 {
    color:var(--btx-title--color);
 }
@@ -92,8 +92,7 @@ list-style: none;
 }
 .name_btn{
         background-color: var(--btx-title--color);
-        font-family: 'Roboto';
-        font-style: normal;
+        font-family: inherit;
         font-weight: 700;
         font-size: 16px;
         line-height:1.88;
@@ -102,6 +101,7 @@ list-style: none;
         text-align: center;
         letter-spacing: 0.06em;
         color: var(--second-title-color);
+        border-radius: 4px;
         
     
 }
@@ -167,7 +167,7 @@ list-style: none;
 }
 .team_name{
 
-       font-family: 'Roboto';
+      
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
@@ -248,7 +248,9 @@ font-size: 14px;
 
         font-family: inherit;
         list-style: none;
+
 }
+
  .port_btn{
     background-color: var(--team--section-color);
        font-weight: 500;
@@ -256,11 +258,16 @@ font-size: 14px;
         line-height:1.62;
         letter-spacing: 0.03em;
         color: var(--first-title-color);
+        border-radius: 4px;
+        
        
         
        
  }
- 
+ .current_button {
+     background-color: var(--btx-title--color);
+     color: var(--second-title-color);
+ }
 .port_btn:hover,
 .port_btn:focus {
     background-color: var(--btx-title--color);
