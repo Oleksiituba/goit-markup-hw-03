@@ -106,10 +106,18 @@ list-style: none;
     display: flex;
 }
         /*-------------Main-----------*/
-
+        
+  .section{
+            padding-top: 94px;
+            padding-bottom: 94px;
+        } 
+                .fithers {
+                    padding-bottom: 0;
+                }
     /*-------------section name-----------*/
 .name{  
     background-color: var(--bgrd--title--color);
+  
 }
 
 .main_name{
@@ -121,8 +129,12 @@ list-style: none;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-title-color);
-       margin-bottom: 200px;
-       margin-bottom: 280px;
+       padding-bottom:  200px;
+       padding-bottom:  280px;
+        width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;
         
       
     }
@@ -144,13 +156,8 @@ list-style: none;
     
 }
 
-    .peculiarity{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-.fithers{
-    padding-bottom: 0;
-}
+  
+
 .peculiarity_list{
     list-style: none;
    
@@ -172,10 +179,8 @@ list-style: none;
         color:var(--text-title--color);
 }
 /*-------------section work-----------*/
-.work{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
+
 .work_title{
   
         font-size: 36px;
