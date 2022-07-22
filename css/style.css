@@ -6,7 +6,8 @@
   --logo--title--color:#000000;
   --bgrd--title--color:#2F303A;
   --footer--title--color:rgba(255, 255, 255, 0.6);
-  --team--section-color:#F5F4FA;
+  --team--section--color:#F5F4FA;
+  --btx-color--bg:#188CE8;
 }
 
 body {
@@ -72,7 +73,19 @@ list-style: none;
         color:var(--btx-title--color);
 
     }
+        .container {
+            width: 1200px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            outline: tomato;
+        }
+  .header-list{
 
+  }
+.conteiner-flex{
+    display: flex;
+}
         /*-------------Main-----------*/
 
     /*-------------section name-----------*/
@@ -91,7 +104,7 @@ list-style: none;
         color: var(--second-title-color);
 }
 .name_btn{
-        background-color: var(--btx-title--color);
+        background-color: var(--btx-color--bg);
         font-family: inherit;
         font-weight: 700;
         font-size: 16px;
@@ -186,6 +199,7 @@ list-style: none;
  .footer {  
 
     background-color:var(--bgrd--title--color);
+    padding: 60px 0 ;
  }
 .footer_web_studio {
     font-family: 'Raleway';
