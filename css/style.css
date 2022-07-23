@@ -36,12 +36,11 @@ body {
         }
 
 /*-------------Header-----------*/
-
-.header{
-
-    padding-top: 24px;
-    padding-bottom: 25px;
+.header > .container{
+    display: flex;
+    align-items: center;
 }
+
 .header-web-studio{
 font-family: 'Raleway';
 font-weight: 700;
@@ -51,7 +50,9 @@ font-weight: 700;
     list-style: none;
     text-decoration: none;
      color: var(--logo--title--color);
- 
+padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .header-web{
@@ -59,6 +60,7 @@ font-weight: 700;
 }
 .header-list{
 list-style: none;
+display: flex;
 }
 .header-link{
    
@@ -67,9 +69,11 @@ list-style: none;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--first-title-color);
-        
         text-decoration: none;
 
+}
+.header-link:not(:last-child){
+    margin-right: 50px;
 }
 .header-link :hover,
 .header-link :focus
@@ -81,6 +85,15 @@ list-style: none;
 
 }
 
+    
+
+.header-item-contact{
+    
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+        gap: 50px;
+}
 
 .header-link-contact {
    
@@ -92,13 +105,15 @@ list-style: none;
         list-style: none;
         text-decoration: none;
         color: var(--text-title--color);
+    
+        m
 }
 .header-link-contact:hover,
 .header-link-contact:focus{
         color:var(--btx-title--color);
 
     }
-    
+      
 
 .conteiner-flex{
     display: flex;
@@ -117,6 +132,10 @@ list-style: none;
     background-color: var(--bgrd--title--color);
   
 }
+.name-section{
+    padding-top: 200px;
+        padding-bottom: 280px;
+}
 
 .main_name{
 
@@ -127,7 +146,8 @@ list-style: none;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-title-color);
-       
+        
+    max-width: 696px;
         
       
     }
@@ -148,10 +168,19 @@ list-style: none;
     
 }
 
-  
+  .peculiarity_title{
+    width: 1170px;
+    display: flex;
+        justify-content: space-between;
+  }
 
 .peculiarity_list{
     list-style: none;
+   
+        width: 270px;
+        height: 101px;
+       
+
    
 }
 
@@ -180,16 +209,22 @@ list-style: none;
         letter-spacing: 0.03em;   
         color:var(--first-title-color);
         margin-bottom: 50px;
+        width: 376px;
+        height: 42px;
     
 
 }
 .work_list{
 list-style: none;
+display: flex;
+justify-content: space-between;
 
 }
 .img_work{
    
     text-decoration: none;
+    width: 370px;
+       height: 294px;
 }
 /*-------------section team-----------*/
 .team-section{
@@ -206,11 +241,15 @@ list-style: none;
 }
 .team_title{
     list-style: none;
+    display: flex;
+         justify-content: space-between;
 
 }
 .team_list{
     background-color: var(--second-title-color);
     text-decoration: none;
+    width: 270px;
+        height: 368px;
    
 }
 .team_list_img{
@@ -252,6 +291,7 @@ margin-bottom: 30px;
     text-decoration: none;
 
     color: var(--second-title-color);
+    
 
 }
 
