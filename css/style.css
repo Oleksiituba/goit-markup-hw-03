@@ -8,6 +8,7 @@
   --footer--title--color:rgba(255, 255, 255, 0.6);
   --team--section--color:#F5F4FA;
   --btx-color--bg:#188CE8;
+  --bg--title-color:#E5E5E5;
 }
 p,h1,h2,h3,h4
 {
@@ -24,7 +25,7 @@ button{
 }
 body {
     font-family: 'Roboto',sans-serif;
-    background-color: var(--second-title-color);
+    background-color: var(--second-title-color)
     color: var(--first-title-color);
 }
     .container {
@@ -42,6 +43,9 @@ margin: 0;
 }
 
 /*-------------Header-----------*/
+.header-container{
+    border-bottom: 1px solid #000;
+}
 .header > .container{
     display: flex;
     align-items: center;
@@ -242,7 +246,7 @@ column-gap: 30px;
 }
 /*-------------section team-----------*/
 .team-section{
-    background-color: var(--team--section-color);
+    background-color: #F5F4FA;
 }
 .team{
  
@@ -251,6 +255,7 @@ column-gap: 30px;
         letter-spacing: 0.03em;
         color:var(--first-title-color);
         text-align: center;
+        margin-bottom: 50px;
      
 
 }
@@ -265,7 +270,7 @@ column-gap: 30px;
     text-decoration: none;
     width: 270px;
       
-        margin-top: 50px;
+  
    
 }
 .team_list_img{
@@ -296,8 +301,8 @@ width: 270px;
 
     background-color:var(--bgrd--title--color);
     padding: 60px 0 ;
-    padding-top: 60px;
-    padding-bottom: 161px;
+
+ 
  }
  
 .footer_web_studio {
@@ -372,38 +377,53 @@ font-size: 14px;
 
         font-family: inherit;
         list-style: none;
-     
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: 34px;
+        justify-content: center
+       
+       
 
 }
 
  .port_btn{
-    background-color: var(--team--section-color);
+   display: flex;
        font-weight: 500;
         font-size: 16px;
         line-height:1.62;
         letter-spacing: 0.03em;
         color: var(--first-title-color);
+        background: var(--team--section--color);
+        text-align: center;
         border-radius: 4px;
-       
-       
-   
-       
-        
-       
+        margin-left: 8px;
+        border: 0;
+        cursor: pointer;
+             
  }
- .current_button {
-     background-color: var(--btx-title--color);
-     color: var(--second-title-color);
- }
+
 .port_btn:hover,
 .port_btn:focus {
     background-color: var(--btx-title--color);
     color:var(--second-title-color);
 }
-
+ .current_button {
+     background-color: var(--btx-title--color);
+     color: var(--second-title-color);
+ }
+.menu_project_item{
+        list-style: none;
+            display: flex;
+            
+            flex-wrap: wrap;
+                column-gap: 30px;
+}
 .menu_project_list{
         list-style: none;
         text-decoration: none;
+        width: 370px;
+      height: 404px;
         }
  .menu_project_name{
     font-weight: 700;
