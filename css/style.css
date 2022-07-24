@@ -25,7 +25,7 @@ button{
 }
 body {
     font-family: 'Roboto',sans-serif;
-    background-color: var(--second-title-color)
+    background-color: var(--second-title-color);
     color: var(--first-title-color);
 }
     .container {
@@ -185,12 +185,15 @@ display: flex;
   .peculiarity_title{
     width: 1170px;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
+    list-style: none;
+   
   }
 
 .peculiarity_list{
     list-style: none;
-   
+    flex-basis: calc(100% / 4 - 30px);
         width: 270px;
         height: 101px;
        
@@ -238,11 +241,15 @@ display: flex;
 column-gap: 30px;
 
 }
+.img_work_visual{
+    display: block;
+    width: 370px;
+   height: 294px;
+}
 .img_work{
    
     text-decoration: none;
-    width: 370px;
-       height: 294px;
+   
 }
 /*-------------section team-----------*/
 .team-section{
@@ -277,6 +284,7 @@ column-gap: 30px;
 margin-bottom: 30px;
 width: 270px;
     height: 260px;
+    display: block;
 }
 .team_name{
 
@@ -425,12 +433,17 @@ font-size: 14px;
         width: 370px;
       height: 404px;
         }
+        .menu_project_img{
+            display: block;
+            margin-bottom: 20px;
+        }
  .menu_project_name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--first-title-color);
+
    }
  .menu_project_text{
         font-weight: 400;
