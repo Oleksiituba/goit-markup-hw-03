@@ -27,13 +27,19 @@ body {
     background-color: var(--second-title-color);
     color: var(--first-title-color);
 }
-        .container {
+    .container {
             width: 1200px;
             margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
-            outline: 2px solid tomato;
+            outline: 2px solid tomato
         }
+
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
 
 /*-------------Header-----------*/
 .header > .container{
@@ -106,7 +112,7 @@ display: flex;
         text-decoration: none;
         color: var(--text-title--color);
     
-        m
+        
 }
 .header-link-contact:hover,
 .header-link-contact:focus{
@@ -115,9 +121,7 @@ display: flex;
     }
       
 
-.conteiner-flex{
-    display: flex;
-}
+
         /*-------------Main-----------*/
         
   .section{
@@ -128,50 +132,56 @@ display: flex;
                     padding-bottom: 0;
                 }
     /*-------------section name-----------*/
-.name{  
+.name{ 
     background-color: var(--bgrd--title--color);
+    text-align: center;
+    padding: 200px 0 ;
+    
   
-}
-.name-section{
-    padding-top: 200px;
-        padding-bottom: 280px;
 }
 
 .main_name{
 
-        
+        font-weight: 900;
         font-size: 44px;
         line-height: 1.36;    
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-title-color);
-        
-    max-width: 696px;
+        margin-bottom: 30px;
+        display: flex;
+    
         
       
     }
 .name_btn{
-        background-color: var(--btx-color--bg);
+       
         font-family: inherit;
         font-weight: 700;
         font-size: 16px;
         line-height:1.88;
-        display: flex;
+        display: inline-block;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
         color: var(--second-title-color);
+        background-color: var(--btx-title--color);
         border-radius: 4px;
-       
-        
-    
+        margin-top: 30px;
+        padding: 10px 32px ;
+          
+}
+.name_btn:hover,
+.name_btn:focus {
+    color: var(--second-title-color);
+    background-color: var(--btx-color--bg)
 }
 
   .peculiarity_title{
     width: 1170px;
     display: flex;
-        justify-content: space-between;
+    column-gap: 30px;
   }
 
 .peculiarity_list{
@@ -191,6 +201,8 @@ display: flex;
         text-transform: uppercase;
         color: var(--first-title-color);
         padding-bottom: 10px;
+        width: 270px;
+        height: 16px;
 }
 .peculiarity_text{
    
@@ -198,6 +210,8 @@ display: flex;
         line-height: 1.71;
         letter-spacing: 0.03em; 
         color:var(--text-title--color);
+        width: 270px;
+        height: 75px;
 }
 /*-------------section work-----------*/
 
@@ -208,16 +222,16 @@ display: flex;
         line-height:1.16;
         letter-spacing: 0.03em;   
         color:var(--first-title-color);
+        text-align: center;
         margin-bottom: 50px;
-        width: 376px;
-        height: 42px;
+       
     
 
 }
 .work_list{
 list-style: none;
 display: flex;
-justify-content: space-between;
+column-gap: 30px;
 
 }
 .img_work{
@@ -236,24 +250,28 @@ justify-content: space-between;
         line-height: 1.16;
         letter-spacing: 0.03em;
         color:var(--first-title-color);
-        margin-bottom: 50px;
+        text-align: center;
+     
 
 }
 .team_title{
     list-style: none;
     display: flex;
-         justify-content: space-between;
+column-gap: 30px;
 
 }
 .team_list{
     background-color: var(--second-title-color);
     text-decoration: none;
     width: 270px;
-        height: 368px;
+      
+        margin-top: 50px;
    
 }
 .team_list_img{
 margin-bottom: 30px;
+width: 270px;
+    height: 260px;
 }
 .team_name{
 
@@ -291,6 +309,9 @@ margin-bottom: 30px;
     text-decoration: none;
 
     color: var(--second-title-color);
+    margin-top:  60px;
+     
+     
     
 
 }
@@ -313,6 +334,7 @@ font-size: 14px;
    
     text-decoration: none;
     color:var(--second-title-color);
+   margin-top: 20px;
 }
 
 .footer_contacts_list{
@@ -323,6 +345,7 @@ font-size: 14px;
        
         text-decoration: none;
         color: rgba(255, 255, 255, 0.6);
+        margin-top: 9px;
 }
 .footer_contacts_adress:hover,
 .footer_contacts_adress:focus {
@@ -340,10 +363,16 @@ font-size: 14px;
 .header-list.header-link.current{
     color: var(--btx-title--color)
 }
+
+.port_menu{
+    padding-top: 94px;
+        padding-bottom: 94px;
+}
 .port_btn_list{
 
         font-family: inherit;
         list-style: none;
+     
 
 }
 
@@ -355,7 +384,9 @@ font-size: 14px;
         letter-spacing: 0.03em;
         color: var(--first-title-color);
         border-radius: 4px;
-        
+       
+       
+   
        
         
        
