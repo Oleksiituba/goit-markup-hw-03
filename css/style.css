@@ -22,6 +22,7 @@ ul,ol{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 button{
@@ -273,6 +274,7 @@ column-gap: 30px;
 .team_title{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 column-gap: 30px;
 
 }
@@ -284,11 +286,17 @@ column-gap: 30px;
   
    
 }
+.card-thumb-team{
+    padding-bottom: 30px;
+}
 .team_list_img{
-margin-bottom: 30px;
-width: 270px;
-    height: 260px;
+
     display: block;
+}
+.content_time{
+
+text-align: center;
+padding-bottom: 30px;
 }
 .team_name{
 
@@ -431,15 +439,22 @@ font-size: 14px;
             flex-wrap: wrap;
                 column-gap: 30px;
 }
-.menu_project_list{
+.menu_project_list {
+    outline: 1px solid tomato;
         list-style: none;
         text-decoration: none;
         width: 370px;
-      height: 404px;
+     margin-bottom: 30px;
         }
         .menu_project_img{
             display: block;
-            margin-bottom: 20px;
+            
+        }
+        .card-content{
+            padding: 20px 24px;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
         }
  .menu_project_name{
     font-weight: 700;
@@ -447,6 +462,7 @@ font-size: 14px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--first-title-color);
+    margin-top: 20px;
 
    }
  .menu_project_text{
@@ -455,4 +471,5 @@ font-size: 14px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: var(--text-title--color);
+        margin-top: 4px;
  }
