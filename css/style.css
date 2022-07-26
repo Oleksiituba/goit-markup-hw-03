@@ -85,6 +85,8 @@ display: flex;
         letter-spacing: 0.02em;
         color: var(--first-title-color);
         text-decoration: none;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
 }
 .header-link:not(:last-child){
@@ -120,6 +122,8 @@ display: flex;
         list-style: none;
         text-decoration: none;
         color: var(--text-title--color);
+            padding-top: 32px;
+                padding-bottom: 32px;
     
         
 }
@@ -138,7 +142,7 @@ display: flex;
             padding-bottom: 94px;
         } 
                 .fithers {
-                    padding-bottom: 0;
+                    padding-top: 0;
                 }
     /*-------------section name-----------*/
 .name{ 
@@ -162,10 +166,11 @@ padding-left: 237px;
         color: var(--second-title-color);
         margin-bottom: 30px;
         display: flex;
-        text-align: center;
-        justify-content: center;
         width: 696px;
-        height: 120px;
+        margin-right: auto;
+        margin-left: auto;
+       
+     
         
       
     }
@@ -193,20 +198,18 @@ padding-left: 237px;
 }
 
   .peculiarity_title{
-    width: 1170px;
+   
     display: flex;
-    flex-wrap: wrap;
+    
     column-gap: 30px;
-    list-style: none;
+    
    
   }
 
 .peculiarity_list{
-    list-style: none;
-    flex-basis: calc(100% / 4 - 30px);
-        width: 270px;
-        height: 101px;
-       
+   
+    flex-basis: calc((100% - 3 * 30px )/ 4 - 30px);
+      
 
    
 }
@@ -217,9 +220,8 @@ padding-left: 237px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--first-title-color);
-        padding-bottom: 10px;
-        width: 270px;
-        height: 16px;
+        margin-bottom: 10px;
+       
 }
 .peculiarity_text{
    
@@ -253,8 +255,8 @@ column-gap: 30px;
 }
 .img_work_visual{
     display: block;
-    width: 370px;
-   height: 294px;
+   min-width: 100%;
+   height: auto;
 }
 .img_work{
    
@@ -287,13 +289,10 @@ column-gap: 30px;
     background-color: var(--second-title-color);
     text-decoration: none;
     width: 270px;
-      
-  
+
+}
    
-}
-.card-thumb-team{
-    padding-bottom: 30px;
-}
+
 .team_list_img{
 
     display: block;
@@ -301,6 +300,7 @@ column-gap: 30px;
 .content_time{
 
 text-align: center;
+padding-top: 30px;
 padding-bottom: 30px;
 }
 .team_name{
@@ -337,13 +337,8 @@ padding-bottom: 30px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-
     color: var(--second-title-color);
-    margin-top:  60px;
-     
-     
-    
-
+ 
 }
 
 .footer_web {
@@ -351,6 +346,8 @@ padding-bottom: 30px;
 }
 .footer-address{
 font-style: normal;
+margin-top: 20px;
+
 }
 .contacts_item{
 list-style: none;
@@ -364,7 +361,8 @@ font-size: 14px;
    
     text-decoration: none;
     color:var(--second-title-color);
-   margin-top: 20px;
+   
+   
 }
 
 .footer_contacts_list{
@@ -405,13 +403,16 @@ font-size: 14px;
         display: flex;
         align-items: center;
         
-        margin-bottom: 34px;
+        margin-bottom: 50px;
         justify-content: center
        
        
 
 }
+.port_btn_item{
 
+    margin-left: 8px;
+}
  .port_btn{
    display: flex;
        font-weight: 500;
@@ -422,7 +423,7 @@ font-size: 14px;
         background: var(--team--section--color);
         text-align: center;
         border-radius: 4px;
-        margin-left: 8px;
+        padding: 6px 22px;
         border: 0;
         cursor: pointer;
              
@@ -439,17 +440,15 @@ font-size: 14px;
  }
 .menu_project_item{
         list-style: none;
-            display: flex;
-            
-            flex-wrap: wrap;
-                column-gap: 30px;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 30px;
 }
 .menu_project_list {
     outline: 1px solid tomato;
-        list-style: none;
-        text-decoration: none;
+     
         width: 370px;
-     margin-bottom: 30px;
+     
         }
         .menu_project_img{
             display: block;
@@ -457,9 +456,9 @@ font-size: 14px;
         }
         .card-content{
             padding: 20px 24px;
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
+            border-left: 1px solid #EEEEEE;
+            border-right: 1px solid#EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
         }
  .menu_project_name{
     font-weight: 700;
@@ -467,8 +466,7 @@ font-size: 14px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--first-title-color);
-    margin-top: 20px;
-
+   
    }
  .menu_project_text{
         font-weight: 400;
