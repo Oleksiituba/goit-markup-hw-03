@@ -447,7 +447,7 @@ font-size: 14px;
 .menu_project_list {
     outline: 1px solid tomato;
      
-        width:100%;
+      max-width: 100%;
      
         }
         .menu_project_img{
